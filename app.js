@@ -92,7 +92,7 @@ menuItems.forEach((item, index) => {
     //change the current slide
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
 
-    //change the choosen product
+    //change the chosen product
     choosenProduct = products[index];
 
     //change texts of currentProduct
@@ -100,7 +100,7 @@ menuItems.forEach((item, index) => {
     currentProductPrice.textContent = "$" + choosenProduct.price;
     currentProductImg.src = choosenProduct.colors[0].img;
 
-    //assing new colors
+    //giving new colors
     currentProductColors.forEach((color, index) => {
       color.style.backgroundColor = choosenProduct.colors[index].code;
     });
